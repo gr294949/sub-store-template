@@ -86,6 +86,10 @@
         "outbound": "bahamut"
       },
       {
+        "rule_set": "av",
+        "outbound": "av"
+      },
+      {
         "rule_set": "youtube",
         "outbound": "youtube"
       },
@@ -230,6 +234,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/gr294949/meta-rules-dat@singbox/geo-lite/geosite/telegram.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "av",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://fastly.jsdelivr.net/gh/gr294949/meta-rules-dat@singbox/geo-lite/geosite/av.srs",
         "download_detour": "direct"
       },
       {
