@@ -90,6 +90,10 @@
         "outbound": "av"
       },
       {
+        "rule_set": "jav",
+        "outbound": "jav"
+      },
+      {
         "rule_set": "youtube",
         "outbound": "youtube"
       },
@@ -244,6 +248,13 @@
         "download_detour": "direct"
       },
       {
+        "tag": "jav",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://fastly.jsdelivr.net/gh/gr294949/meta-rules-dat@singbox/geo-lite/geosite/jav.srs",
+        "download_detour": "direct"
+      },
+      {
         "tag": "youtube",
         "type": "remote",
         "format": "binary",
@@ -315,7 +326,28 @@
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "jp-auto"
+    },
+    {
+      "tag": "jav",
+      "type": "selector",
+      "outbounds": [
+        "proxy",
+        "direct",
+        "hk",
+        "hk-auto",
+        "tw",
+        "tw-auto",
+        "jp",
+        "jp-auto",
+        "sg",
+        "sg-auto",
+        "us",
+        "us-auto",
+        "all",
+        "all-auto"
+      ],
+      "default": "sg-auto"
     },
     {
       "tag": "apple",
